@@ -1,3 +1,5 @@
-module com.udacity.packagesearch {
-	// Add your code here
+module com.udacity.packagesearch
+{
+	requires com.udacity.hotel;
+    requires com.udacity.flight;
 }

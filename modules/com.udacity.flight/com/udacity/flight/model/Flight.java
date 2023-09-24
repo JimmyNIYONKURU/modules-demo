@@ -11,7 +11,8 @@ public class Flight
 	private ZonedDateTime departureTime;
 	private ZonedDateTime arrivalTime;
 
-	public Flight(String flightNumber, String departureAirport, String arrivalAirport, ZonedDateTime departureTime, ZonedDateTime arrivalTime) {
+	public Flight(String flightNumber, String departureAirport, String arrivalAirport, ZonedDateTime departureTime, ZonedDateTime arrivalTime)
+	{
 		this.flightNumber = flightNumber;
 		this.departureAirport = departureAirport;
 		this.arrivalAirport = arrivalAirport;
@@ -20,7 +21,8 @@ public class Flight
 	}
 
 	@Override
-	public boolean equals(Object o) {
+	public boolean equals(Object o)
+	{
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Flight flight = (Flight) o;
@@ -30,47 +32,58 @@ public class Flight
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode()
+	{
 		return Objects.hash(getFlightNumber(), getDepartureAirport(), getArrivalAirport());
 	}
 
-	public String getFlightNumber() {
+	public String getFlightNumber()
+	{
 		return flightNumber;
 	}
 
-	public void setFlightNumber(String flightNumber) {
+	public void setFlightNumber(String flightNumber)
+	{
 		this.flightNumber = flightNumber;
 	}
 
-	public String getDepartureAirport() {
+	public String getDepartureAirport()
+	{
 		return departureAirport;
 	}
 
-	public void setDepartureAirport(String departureAirport) {
+	public void setDepartureAirport(String departureAirport)
+	{
 		this.departureAirport = departureAirport;
 	}
 
-	public String getArrivalAirport() {
+	public String getArrivalAirport()
+	{
 		return arrivalAirport;
 	}
 
-	public void setArrivalAirport(String arrivalAirport) {
+	public void setArrivalAirport(String arrivalAirport)
+	{
 		this.arrivalAirport = arrivalAirport;
 	}
 
-	public ZonedDateTime getDepartureTime() {
+	public ZonedDateTime getDepartureTime()
+	{
 		return departureTime;
 	}
 
-	public void setDepartureTime(ZonedDateTime departureTime) {
+	public void setDepartureTime(ZonedDateTime departureTime)
+	{
 		this.departureTime = departureTime;
 	}
 
-	public ZonedDateTime getArrivalTime() {
+	public ZonedDateTime getArrivalTime()
+	{
 		return arrivalTime;
 	}
 
-	public void setArrivalTime(ZonedDateTime arrivalTime) {
+	public void setArrivalTime(ZonedDateTime arrivalTime)
+	{
 		this.arrivalTime = arrivalTime;
 	}
 }

@@ -8,9 +8,11 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-public class FlightSearchService {
+public class FlightSearchService
+{
 
-	public List<Flight> findAvailableFlights(String departureAirport, String arrivalAirport) {
+	public List<Flight> findAvailableFlights(String departureAirport, String arrivalAirport)
+	{
 		return List.of(
 			new Flight(
 				"123", "SFO", "LAX",

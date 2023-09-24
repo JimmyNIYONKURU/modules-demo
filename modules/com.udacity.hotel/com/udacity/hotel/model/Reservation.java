@@ -3,7 +3,8 @@ package com.udacity.hotel.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Reservation {
+public class Reservation
+{
 	private String hotelName;
 	private String roomType;
 	private int roomNumber;
@@ -12,7 +13,8 @@ public class Reservation {
 	private LocalDate checkOutDate;
 	private final String generalManager;
 
-	public Reservation(String hotelName, String roomType, int roomNumber, String hotelAddress, LocalDate checkInDate, LocalDate checkOutDate, String generalManager) {
+	public Reservation(String hotelName, String roomType, int roomNumber, String hotelAddress, LocalDate checkInDate, LocalDate checkOutDate, String generalManager)
+	{
 		this.hotelName = hotelName;
 		this.roomType = roomType;
 		this.roomNumber = roomNumber;
@@ -23,7 +25,8 @@ public class Reservation {
 	}
 
 	@Override
-	public boolean equals(Object o) {
+	public boolean equals(Object o)
+	{
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
 		Reservation that = (Reservation) o;
@@ -36,59 +39,73 @@ public class Reservation {
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode()
+	{
 		return Objects.hash(hotelName, roomType, roomNumber, hotelAddress, checkInDate);
 	}
 
-	public String getHotelName() {
+	public String getHotelName()
+	{
 		return hotelName;
 	}
 
-	public void setHotelName(String hotelName) {
+	public void setHotelName(String hotelName)
+	{
 		this.hotelName = hotelName;
 	}
 
-	public String getRoomType() {
+	public String getRoomType()
+	{
 		return roomType;
 	}
 
-	public void setRoomType(String roomType) {
+	public void setRoomType(String roomType)
+	{
 		this.roomType = roomType;
 	}
 
-	public int getRoomNumber() {
+	public int getRoomNumber()
+	{
 		return roomNumber;
 	}
 
-	public void setRoomNumber(int roomNumber) {
+	public void setRoomNumber(int roomNumber)
+	{
 		this.roomNumber = roomNumber;
 	}
 
-	public String getHotelAddress() {
+	public String getHotelAddress()
+	{
 		return hotelAddress;
 	}
 
-	public void setHotelAddress(String hotelAddress) {
+	public void setHotelAddress(String hotelAddress)
+	{
 		this.hotelAddress = hotelAddress;
 	}
 
-	public LocalDate getCheckInDate() {
+	public LocalDate getCheckInDate()
+	{
 		return checkInDate;
 	}
 
-	public void setCheckInDate(LocalDate checkInDate) {
+	public void setCheckInDate(LocalDate checkInDate)
+	{
 		this.checkInDate = checkInDate;
 	}
 
-	public LocalDate getCheckOutDate() {
+	public LocalDate getCheckOutDate()
+	{
 		return checkOutDate;
 	}
 
-	public void setCheckOutDate(LocalDate checkOutDate) {
+	public void setCheckOutDate(LocalDate checkOutDate)
+	{
 		this.checkOutDate = checkOutDate;
 	}
 
-	private String getGeneralManager() {
+	private String getGeneralManager()
+	{
 		return generalManager;
 	}
 }
